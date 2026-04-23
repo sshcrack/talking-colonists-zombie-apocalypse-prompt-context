@@ -7,7 +7,7 @@ license = "GPL-3.0"
 modId = "${id}"
 version = "${version}"
 displayName = "${name}"
-authors = "Meza"
+authors = "sshcrack"
 description = '''
 ${description}
 '''
@@ -20,3 +20,11 @@ mandatory = true
 versionRange = "[${minecraftVersion},)"
 ordering = "NONE"
 side = "CLIENT"
+
+
+[[dependencies.${mod_id}]]
+modId="mc_talking"
+mandatory=true
+versionRange="[${mc_talking_version},)"
+ordering="BEFORE"
+side="BOTH"

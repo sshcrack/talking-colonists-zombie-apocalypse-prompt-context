@@ -25,11 +25,12 @@ stonecutter {
             for (it in loaders) version("$version-$it", version)
         }
 
-        mc("1.21.4", "fabric", "neoforge")
+        mc("1.21.1", "neoforge")
+        mc("1.20.1", "forge")
 
-        vcsVersion = "1.21.4-fabric"
+        vcsVersion = "1.21.1-neoforge"
     }
     create(rootProject)
 }
 
-rootProject.name = "YourModName"
+rootProject.name = "Zombie Apocalypse - Talking Citizens Context"

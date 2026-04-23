@@ -27,3 +27,9 @@ mandatory = true
 versionRange = "*"
 ordering = "NONE"
 side = "CLIENT"
+[[dependencies.${id}]]
+modId = "mc_talking"
+mandatory = true
+versionRange = "[${mc_talking_version},)"
+ordering = "BEFORE"
+side = "BOTH"

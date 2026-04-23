@@ -17,13 +17,19 @@ modSettings {
 
 // Example of overriding publishing settings
 publishMods {
-    modrinth {
-        if (mod.isFabric) requires("fabric-api")
-    }
-
     curseforge {
         clientRequired = true // Set as needed
-        serverRequired = false // Set as needed
-        if (mod.isFabric) requires("fabric-api")
+        serverRequired = true // Set as needed
     }
+}
+
+repositories {
+    maven {
+        name = "sshcrack"
+        url = uri("https://maven.sshcrack.me/releases")
+    }
+}
+
+dependencies {
+    modImplementation("me.sshcrack:mc_talking:${project.property("mc_talking_version")}-${project.name}")
 }
