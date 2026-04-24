@@ -12,6 +12,7 @@ modSettings {
         darkBackground = true
         musicVolume = 0.0
     }
+    variableReplacements.put("mc_talking_version", project.property("mc_talking_version")!!)
 }
 
 

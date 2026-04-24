@@ -22,7 +22,7 @@ ordering = "NONE"
 side = "CLIENT"
 
 
-[[dependencies.${mod_id}]]
+[[dependencies.${id}]]
 modId="mc_talking"
 mandatory=true
 versionRange="[${mc_talking_version},)"
