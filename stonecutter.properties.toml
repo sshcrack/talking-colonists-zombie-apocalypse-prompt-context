@@ -1,0 +1,43 @@
+mod.id = "mc_talking_context_zombie_apocalypse"
+mod.name = "Talking Colonists: Zombie Apocalypse Prompt Context"
+mod.group = "me.sshcrack.mc_talking_context.zombie_apocalypse"
+mod.version = "1.0.0"
+mod.channel_tag = "-alpha.1"
+mod.description = "Changes the System Prompt for citizens to be more fitting for a zombie apocalypse modpack"
+mod.authors = ["sshcrack"]
+mod.contributors = []
+mod.inception_year = "2025"
+mod.license.name = "All rights reserved"
+mod.license.url = "https://github.com/sshcrack/talking-colonists-zombie-apocalypse-prompt-context/blob/master/LICENSE.md"
+mod.license.dist = "repo"
+mod.sources_url = "https://github.com/sshcrack/talking-colonists-zombie-apocalypse-prompt-context"
+mod.homepage_url = "https://github.com/sshcrack/talking-colonists-zombie-apocalypse-prompt-context"
+mod.issues_url = "https://github.com/sshcrack/talking-colonists-zombie-apocalypse-prompt-context/issues"
+mod.discord_url = "https://discord.gg/ScAsuQt5em"
+
+[[mod.pom.developers]]
+id = "sshcrack"
+name = "sshcrack"
+url = "https://github.com/sshcrack"
+
+[forge]
+
+[forge."1.20.1"]
+deps.minecraft = "1.20.1"
+deps.forge = "47.2.0"
+deps.minecolonies_version="1.20.1-1.1.1215-snapshot"
+deps.structurize_version="1.20.1-1.0.806-snapshot"
+deps.blockui_version="1.20.1-1.0.190-snapshot"
+deps.domum_version="1.20.1-1.0.288-snapshot"
+
+
+[neoforge]
+
+[neoforge."1.21.1"]
+deps.minecraft = "1.21.1"
+deps.parchment = "1.21.1:2024.11.17"
+deps.neoforge = "21.1.213"
+deps.minecolonies_version="1.1.1269-1.21.1-snapshot"
+deps.structurize_version="1.0.823-1.21.1-snapshot"
+deps.blockui_version="1.0.211-1.21.1-snapshot"
+deps.domum_version="1.0.233-snapshot"

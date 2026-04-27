@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "me.sshcrack.mc_talking_context.zombie_apocalypse.mixin",
+  "compatibilityLevel": "${java}",
+  "mixins": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
