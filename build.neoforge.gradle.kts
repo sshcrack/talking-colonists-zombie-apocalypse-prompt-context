@@ -109,12 +109,11 @@ dependencies {
     implementation(libs.moulberry.mixinconstraints)
     jarJar(libs.moulberry.mixinconstraints)
 
-    implementation("de.maxhenkel.voicechat:voicechat-api:${prop("deps.voicechat_api_version")}")
-    runtimeOnly("maven.modrinth:simple-voice-chat:neoforge-${voicechat_version}")
     implementation("me.sshcrack:mc_talking:${prop("deps.talking_colonists_version")}-${prop("deps.minecraft")}-neoforge")
-    implementation("me.sshcrack:gemini_live_lib:${prop("deps.gemini_live_lib_version")}-${prop("deps.minecraft")}-neoforge")
+    runtimeOnly("maven.modrinth:simple-voice-chat:neoforge-${voicechat_version}")
+    runtimeOnly("me.sshcrack:gemini_live_lib:${prop("deps.gemini_live_lib_version")}-${prop("deps.minecraft")}-neoforge")
 
-    implementation("com.ldtteam:minecolonies:${prop("deps.minecolonies_version")}")
+    runtimeOnly("com.ldtteam:minecolonies:${prop("deps.minecolonies_version")}")
     runtimeOnly("com.ldtteam:domum-ornamentum:${prop("deps.domum_version")}")
     runtimeOnly("com.ldtteam:structurize:${prop("deps.structurize_version")}")
     runtimeOnly("com.ldtteam:blockui:${prop("deps.blockui_version")}")

@@ -114,14 +114,15 @@ dependencies {
 	jarJar(libs.moulberry.mixinconstraints)
 
     modImplementation("me.sshcrack:mc_talking:${prop("deps.talking_colonists_version")}-${prop("deps.minecraft")}-forge")
-	modImplementation("de.maxhenkel.voicechat:voicechat-api:${prop("deps.voicechat_api_version")}")
-	modRuntimeOnly("maven.modrinth:simple-voice-chat:forge-${voicechat_version}")
-	modImplementation("me.sshcrack:gemini_live_lib:${prop("deps.gemini_live_lib_version")}-${prop("deps.minecraft")}-forge")
 
-	modImplementation("com.ldtteam:minecolonies:${prop("deps.minecolonies_version")}")
-	modRuntimeOnly("com.ldtteam:domum_ornamentum:${prop("deps.domum_version")}")
-	modRuntimeOnly("com.ldtteam:structurize:${prop("deps.structurize_version")}")
-	modRuntimeOnly("com.ldtteam:blockui:${prop("deps.blockui_version")}")
+    modRuntimeOnly("de.maxhenkel.voicechat:voicechat-api:${prop("deps.voicechat_api_version")}")
+    modRuntimeOnly("maven.modrinth:simple-voice-chat:forge-${voicechat_version}")
+    modRuntimeOnly("me.sshcrack:gemini_live_lib:${prop("deps.gemini_live_lib_version")}-${prop("deps.minecraft")}-forge")
+
+    modRuntimeOnly("com.ldtteam:minecolonies:${prop("deps.minecolonies_version")}")
+    modRuntimeOnly("com.ldtteam:domum_ornamentum:${prop("deps.domum_version")}:universal")
+    modRuntimeOnly("com.ldtteam:structurize:${prop("deps.structurize_version")}")
+    modRuntimeOnly("com.ldtteam:blockui:${prop("deps.blockui_version")}")
 }
 
 sourceSets {

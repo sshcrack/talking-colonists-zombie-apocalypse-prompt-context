@@ -57,3 +57,21 @@ stonecutter parameters {
 	swaps["minecraft"] = "\"${node.metadata.version}\";"
 	constants["release"] = sc.properties.get<String>("mod.id") != "modtemplate"
 }
+
+
+subprojects {
+    tasks.matching { it.name.startsWith("publish") }.configureEach {
+        doFirst {
+            val libraryDir = file("../talking-colonists")
+            val confirmed = project.findProperty("colonistsPublished") == "true"
+                || System.getenv("COLONISTS_PUBLISHED") == "true"
+
+            if (libraryDir.exists() && !confirmed) {
+                throw GradleException(
+                    "talking-colonists is still included locally! " +
+                        "Either publish it first, or confirm with -PcolonistsPublished=true"
+                )
+            }
+        }
+    }
+}
