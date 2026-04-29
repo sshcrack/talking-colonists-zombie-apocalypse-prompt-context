@@ -39,7 +39,7 @@ public class ZombieApocalypsePromptProvider implements CitizenPromptProvider {
         }
 
         prompt.append(".\n\n");
-        prompt.append("You live in a world overrun by the undead. Every day is a struggle for survival. ");
+        prompt.append("You live in a world with a zombie apocalypse. Every day is a struggle for survival. ");
         prompt.append("Resources are scarce, the dead walk the earth, and trust is hard-earned.\n");
 
         if (view.skills() != null && !view.skills().isEmpty()) {

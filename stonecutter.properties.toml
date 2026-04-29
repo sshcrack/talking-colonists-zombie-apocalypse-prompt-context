@@ -1,8 +1,8 @@
 mod.id = "mc_talking_context_zombie_apocalypse"
 mod.name = "Talking Colonists: Zombie Apocalypse Prompt Context"
 mod.group = "me.sshcrack.mc_talking_context.zombie_apocalypse"
-mod.version = "1.0.0"
-mod.channel_tag = "-alpha.1"
+mod.version = "0.0.1"
+mod.channel_tag = ""
 mod.description = "Changes the System Prompt for citizens to be more fitting for a zombie apocalypse modpack"
 mod.authors = ["sshcrack"]
 mod.contributors = []
